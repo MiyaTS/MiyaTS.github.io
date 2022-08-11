@@ -1,0 +1,46 @@
+.carousel{
+    padding: 81px 0;
+    &__inner{
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+    .prev, .next{
+        position: absolute;
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        background-color: #fff;
+        outline: none;
+        img{
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .next{
+        left: auto;
+        right: -66px;
+    }
+    .tns-item {
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tns-nav{
+        padding-top: 15px;
+        text-align: center;
+        button{
+            border: none;
+            margin: 0 7px;
+            height: 5px;
+            width: 5px;
+            border-radius: 100%;
+            outline: none;
+        }
+        .tns-nav-active{
+            background-color: $main-color;
+        }
+    }
+}
